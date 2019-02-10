@@ -7,3 +7,4 @@ let Party = [
     "updatedOn" : 345
 }
 ]
+export default Party;
