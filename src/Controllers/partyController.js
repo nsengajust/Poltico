@@ -12,4 +12,11 @@ const create = (req, res) => {
         "data" : [party]
     });
 
+};
+
+const getAllParties = (req, res) => {
+    return res.status(200).send({
+        "status" : 200,
+        "data" : [Party]
+    })
 }

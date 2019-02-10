@@ -12,7 +12,7 @@ const create = (req, res) => {
         "data" : [office]
     });
 
-}
+};
 
 const getAllOffices = (req, res) => {
     return res.status(200).send({
