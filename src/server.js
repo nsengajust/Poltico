@@ -11,6 +11,7 @@ app.get('/', (req,res) => {
 });
 app.post('/api/v1/parties', Party.create);
 app.post('/api/v1/offices', Office.create);
+app.get('api/v1/offices', Office.getAllOffices);
 
 const port = PROCESS.env.PORT || 3000;
 
