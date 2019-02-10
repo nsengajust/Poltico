@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" : "nodemon build/src/server.js",
+    "build": "babel src/server.js --out-dir build"
   },
   "repository": {
     "type": "git",
@@ -16,5 +18,25 @@
     "url": "https://github.com/nsengajust/Poltico/issues"
   },
   "homepage": "https://github.com/nsengajust/Poltico#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "express": "^4.16.4",
+    "moment": "^2.24.0",
+    "nodemon": "^1.18.10",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.1",
+    "coveralls": "^3.0.2",
+    "eslint": "^5.13.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "mocha": "^5.2.0",
+    "mocha-lcov-reporter": "^1.3.0",
+    "nyc": "^13.2.0"
+  }
 }
