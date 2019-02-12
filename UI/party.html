@@ -13,11 +13,15 @@
     <div class="signup">
       <form style=" text-align: center;">
         <h2 style="color: #fff;">Political Party Registration Form</h2>
-        <input type="text" name="username" placeholder="Name" /><br /><br />
-        <input type="text" name="username" placeholder="Starting date"
-        /><br /><br />
-        <input type="text" name="slogan" placeholder="Slogan" /><br /><br />
-        <input type="text" name="headpart" placeholder="Head of the party"
+        <input List="Parties" name="Id" placeholder="Id" /><br /><br />
+        <datalist id="Parties">
+            <option  value="P01">P01</option>
+            <option  value="P02">P02</option>
+            <option  value="P03">P03</option>
+            <option  value="P04">P04</option>
+        </datalist>
+        <input type="text" name="HqAddress" placeholder="HqAddress" /><br /><br />
+        <input type="text" name="logoUrl" placeholder="Head of the party"
         /><br /><br />
         <input type="text" placeholder="Address" /><br /><br />
         <input
@@ -25,7 +29,7 @@
           value="Register"
           onclick="myFunction()"
         /><br /><br />
-        <a href="partyView.html">Back to View</a><br /><br />
+        <a href="home.html">Back to View</a><br /><br />
       </form>
     </div>
   </body>
