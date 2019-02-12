@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device=width, initial-scale=1.0">
+    <meta description="author" content="Justin Victor">
+    <title>Politico Platform</title>
+    
+    <link rel="stylesheet" href="asset/css/home.css">
+  </head>
+  <body>
+    <section class="left-side-bar">
+      <div class="top-head">
+       <div class="top-head-name"><span>Justin</span></div>
+        <div class="top-just">
+          <img src="asset/images/cyb.jpeg" alt="just">
+        </div>
+      </div>
+      <div class="view"><p><b><!--MENU--></b></p></div>
+      <div class="top-menu">
+         <nav>
+           <ul>
+             <li>
+                <a href="home.html">
+                    <div class="HomeIcon">
+                      <img src="asset/images/icon.png" alt="icon">
+                    </div>
+                   <span><b>Home</b></span>
+                </a>
+             </li>
+
+             <li>
+                <a href="partyView.html" onclick="return popup('partyView.html')">
+                    <div class="HomeIcon">
+                      <img src="asset/images/filled-flag.png" alt="icon">
+                    </div>
+                   <span><b>Political Parties</b></span>
+                </a>
+             </li>
+
+             <li>
+                <a href="#">
+                  <div class="HomeIcon">
+                    <img src="asset/images/office1.jpg" alt="icon">
+                  </div>
+                 <span><b>Political Offices</b></span>
+                </a>
+             </li>
+
+             <li>
+                <a href="#">
+                  <div class="HomeIcon">
+                    <img src="asset/images/logout1.png" alt="icon">
+                  </div>
+                 <span><b>Log out</b></span>
+                </a>
+             </li>
+           </ul>
+         </nav>
+      </div>
+    </section>
+    <!--rightside!-->
+    <section class="main-side">
+      <div class="top-header">
+      		 <div id="searchwrap">
+   				 <li id="search">
+      				 <form id="search-form" name="search" action="/products" method="get">
+      				  	<input id="search-input" name="search" type="text">
+       				 	<input type="submit" class="button-search" value="search" />
+      				 </form>
+    			</li>
+  			 </div>
+        
+         <div class="profile">
+           <div class="pro">
+             <ul>
+               <li class="just">
+               	<a href="#">
+                 <img src="asset/images/cyb.jpeg" alt="just">
+                </a>
+               </li>
+             </ul>
+           </div>
+         </div>
+      </div>
+    
+    </section>
+    <section class="part container">
+      <div class="parties">
+         
+           
+          <div class="polt part">
+            <div class="party" style="text-align:center; background-image: url(asset/images/popular-item-bg.png) no-repeat; background-size: contain;">
+            <!--	<h1 class="slogan fonty"><b>The change we need. <br/> The voice we deserve.</b><br/></h1> -->
+              <img src="asset/images/elect.png" alt="politic" class="pol-img">
+              <div class="description">
+                <h2 class="fonty-letter"><b>Parties</b></h2><hr class="poll">
+                <p><b>Politics is the art of looking for trouble, finding it everywhere, diagnosing it incorrectly and applying the wrong remedies. </b>
+				</p>
+                <div class="creation-container">
+                <a href="partyView.html" onclick="return popup('partyView.html')" class="create foo">
+                  Create Parties</a>
+                </div>
+              </div>              
+            </div>
+            <div class="party">
+              <img src="asset/images/pol.jpeg" alt="politic" class="pol-img">
+              	<div class="description">
+                <h2 class="fonty-letter"><b>Offices</b></h2><hr class="poll">
+                <p><b>Politics is the art of looking for trouble, finding it everywhere, diagnosing it incorrectly and applying the wrong remedies. </b>
+				</p>
+              <div class="creation-container">
+                <a href="#" class="create foo">Create offices</a>
+              </div>
+             </div>              
+            </div>
+            <div class="party">
+              <img src="asset/images/elect.png" alt="politic" class="pol-img">
+              <div class="description">
+                <h2 class="fonty-letter"><b>Vote</b></h2><hr class="poll">
+                <p><b>Politics is the art of looking for trouble, finding it everywhere, diagnosing it incorrectly and applying the wrong remedies. </b>
+				</p>
+                <div class="creation-container">
+                  <a href="#" class="create foo">Vote & View</a>
+                </div>
+              </div>              
+            </div>
+          </div>
+         </div>           
+        </section>
+		<script>
+		function popup(partyView.html) {
+        newwindow=window.open(partyView.html,'name','height=200,width=200');
+        if (window.focus) {newwindow.focus()}
+        return false;
+   		 }
+		</script>
+	</body>
+</html>
